@@ -1,0 +1,551 @@
+*
+  box-sizing: border-box
+
+body
+  background: #fff
+  font-family: "Open Sans", Sans-serif
+  font-size: 16px
+
+.contenedor
+  width: 90%
+  max-width: 1000px
+  margin: auto
+  overflow: hidden
+
+/* ----- ----- HEADER ----- ----- */
+
+header
+  //background: url(../img/fotoHeader.png) #4a4a48
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  height: 100vh
+  .contenedor
+    min-width: 100%
+    position: relative
+  .menu
+    margin: 40px 30px
+    text-align: right
+    a
+      margin: 0px 20px
+      color: #fff
+      padding-bottom: 9px
+      display: inline-block
+      text-decoration: none
+      border-bottom: 2px solid transparent
+      font-size: 1em
+      transition: all .5s ease
+      position: relative
+      top: -200px
+      &:hover
+        border-bottom: 2px solid #fff
+  .layer
+    .some-space
+      .nombreHeader
+        position: absolute
+        opacity: 0
+    .some-more-space
+        position: absolute
+        opacity: 0
+  .contenedorTexto
+    display: flex
+    justify-content: center
+    align-content: center
+    margin: 190px 0px
+  .contenedor .texto
+    border: 2px solid rgba(255, 255, 255, 0.5)
+    border-radius: 3px
+    display: inline-block
+    text-align: center
+    padding: 20px 60px
+    h1, h2
+      color: #fff
+      font-weight: 300
+      margin: 0
+    .nombre
+      margin-bottom: 10px
+      font-size: 50px
+      line-height: 50px
+    .profesion
+      font-size: 25px
+      line-height: 25px
+
+/* ----- ----- HEADER ----- ----- */
+
+.main
+  .contenedor
+    overflow: visible
+  .acercaDe
+    text-align: center
+    min-height: 160vh
+    .lineamientos
+      font-family: 'Raleway'
+      //display: none
+      .titulo
+        color: rgba(#000, .7)
+        font-size: 24px
+        font-weight: 600
+        opacity: 0
+      .texto
+        margin: 0
+        padding: 0
+        font-weight: 400
+        width: 100%
+        opacity: 0
+    .foto
+      margin-top: 20px
+      img
+        vertical-align: top
+        border-radius: 50%
+        border: 5px solid rgba(0, 0, 0, 0.1)
+    .card
+      padding: 0
+      font-family: 'Raleway'
+      opacity: 0
+      .card-title
+        color: rgba(#323232,.9)
+        font-size: 32px
+        font-weight: 600
+      .toContact
+        color: #1a8b9d
+        text-decoration: none
+        font-weight: 600
+    .texto
+      color: #5a5a5a
+      font-weight: 600
+      font-size: 1em
+      line-height: 30px
+      width: 80%
+      margin: 40px auto 40px auto
+      .titulo
+        font-size: 45px
+        margin-bottom: 40px
+        font-weight: 700
+        color: #393e46
+        text-align: center
+        opacity: 0
+      .bold
+        color: #3895ea
+        text-decoration: underline
+    .habilidades
+      width: 90%
+      min-height: 100%
+      box-sizing: border-box
+      padding: 20px
+      font-family: 'Raleway'
+      opacity: 0
+      .bar
+        width: 100%
+        height: 28px
+        background: #eee
+        .fill
+          height: 100%
+          background: #1a8b9d
+          opacity: 0
+          .tag
+            min-width: 120px
+            max-width: 120px
+            height: 100%
+            background: #13abc4
+            padding: 2px
+            span
+              color: #fff
+              font-size: 14px
+              line-height: 14px
+        .porcentaje
+          float: right
+          vertical-align: center
+    .hexagono
+      height: 4em
+      margin: 3.4641em 0
+      background: #1a8b9d
+      position: relative
+      width: 6.9282em
+      opacity: 0
+      .icon
+        color: #fff
+        font-size: 56px
+    .hexagono:before
+      border-right: 3.4641em solid transparent
+      border-bottom: 2em solid #1a8b9d
+      border-left: 3.4641em solid transparent
+      content: ''
+      height: 0
+      left: 0
+      position: absolute
+      right: 0
+      top: -2em
+      width: 0
+    .hexagono:after 
+      border-top: 2em solid #1a8b9d
+      border-right: 3.4641em solid transparent
+      border-left: 3.4641em solid transparent
+      bottom: -2em
+      content: ''
+      height: 0
+      left: 0
+      position: absolute
+      right: 0
+      width: 0
+  .trabajos
+    padding: 60px 0px
+    align-content: center
+    .bgVideo
+      position: absolute
+      width: 100%
+      height: 100vh
+      overflow: hidden
+      video
+        min-height: 100%
+        min-width: 100%
+    .overlay
+      height: 100vh
+      width: 100%
+      position: absolute
+      background: rgba(#000,.5)
+      z-index: 1
+    .contenedor
+      overflow: hidden
+      height: auto
+      min-height: 100vh
+      position: relative
+      z-index: 2000
+      .titulo
+        font-size: 45px
+        margin-bottom: 80px
+        font-weight: 700
+        color: #fff
+        text-align: center
+      .contenedorTrabajos
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: flex-end
+        height: auto
+        align-items: center
+        .trabajo
+          width: 23%
+          margin-bottom: 40px
+          opacity: 0
+          .thumb
+            width: 100%
+            margin-bottom: 10px
+            img
+              width: 100%
+              vertical-align: top
+              border-radius: 5px
+            &:hover
+              cursor: pointer
+          .descripcion
+            text-align: center
+            .nombre
+              font-weight: 700
+              color: #3895ea
+              margin-bottom: 10px
+            .categoria
+              font-size: 14px
+              color: #fff
+
+.mySlides
+  display: none
+
+.modal-dialog
+  padding: 0px 20px
+  min-width: 70%
+
+.botonDerecho
+  position: absolute
+  top: 45%
+  right: 12px
+  z-index: 99999
+
+.botonIzquierdo
+  position: absolute
+  top: 45%
+  left: 12px
+  z-index: 99999
+
+
+/* ----- ----- FOOTER ----- ----- */
+
+footer
+  .contacto
+    padding: 60px 0px
+    .titulo
+      font-size: 34px
+      margin-bottom: 40px
+      font-weight: 600
+      color: #3895ea
+      text-align: center
+    .formulario
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      input
+        &[type="text"], &[type="email"]
+          border: 2px solid #cecece
+          border-radius: 5px
+          padding: 15px 20px
+          font-size: 20px
+          color: #a4a4a4
+      textarea
+        border: 2px solid #cecece
+        border-radius: 5px
+        padding: 15px 20px
+        font-size: 20px
+        color: #a4a4a4
+      input
+        &[type="text"], &[type="email"]
+          width: 49%
+          margin-bottom: 15px
+      textarea
+        width: 100%
+        height: 100px
+        min-width: 100%
+        max-width: 100%
+        min-height: 100px
+        max-height: 300px
+        margin-bottom: 15px
+      .boton
+        margin: auto
+        background: #3895ea
+        color: #fff
+        border: none
+        border-radius: 3px
+        padding: 15px 40px
+        cursor: pointer
+        &:hover
+          background: #387bea
+      input
+        &[type="text"]:focus, &[type="email"]:focus
+          border: 2px solid #3895ea
+      textarea:focus
+        border: 2px solid #3895ea
+  .redesSociales
+    background: #1e2b38
+    padding: 60px 0px
+    .contenedor
+      display: flex
+      justify-content: center
+    a
+      color: #fff
+      text-align: center
+      width: 100px
+      display: block
+      padding: 15px 0px
+      border-radius: 3px
+      font-size: 26px
+      margin: 0px 20px
+    .twitter:hover
+      background: #1da1f2
+    .facebook:hover
+      background: #3b5998
+    .instagram:hover
+      background: #5851db
+    .github:hover
+      background: #333
+    .linkedin:hover
+      background: #0077b5
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 1085px)
+  header
+    .layer
+      .some-space
+        .nombreHeader
+          font-size: 55px
+          width: max-content
+      .some-more-space
+        font-size: 25px
+
+@media screen and (max-width: 800px)
+  header .menu
+    text-align: center
+  .main .trabajos .contenedorTrabajos .trabajo
+    width: 46%
+
+@media screen and (max-width: 685px)
+  header
+    .layer
+      .some-space
+        .nombreHeader
+          font-size: 45px
+          width: max-content
+      .some-more-space
+        #profesion
+          font-size: 15px
+
+@media screen and (max-width: 710px)
+  footer .contacto .formulario input[type="text"], 
+  footer .contacto .formulario input[type="email"]
+    width: 100%
+    font-size: 16px
+
+  footer .contacto .formulario textarea
+    font-size: 16px
+
+@media screen and (max-width: 510px)
+  header
+    .menu
+      font-size: 12px
+    .layer
+      .some-space
+        .nombreHeader
+          font-size: 35px
+  
+  .main
+    .acercaDe
+      .texto
+        .titulo
+          font-size: 28px
+      .lineamientos
+        .titulo
+          font-size: 16px
+        .texto
+          font-size: 12px
+          line-height: 12px
+      .card
+        .card-title
+          font-size: 20px
+        .card-text
+          font-size: 14px
+    .trabajos
+      .contenedor
+        .titulo
+          font-size: 28px
+
+  footer .redesSociales .contenedor
+    flex-wrap: wrap
+    padding: 20px 0px
+
+/* ----- ----- PARALLAX ----- ----- */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100)
+
+#parallax
+  font-family: 'Lato'
+  background: #222831
+  overflow: hidden
+  height: 100%
+  width: 100%
+  -webkit-font-smoothing: antialiased
+  user-select: none
+
+#particles-js, #parallax, .layer, .some-space, .some-more-space
+  height: 100%
+  position: absolute
+  width: 100%
+
+#particles-js
+  opacity: .6
+
+.nombreHeader
+  color: white
+  font-size: 4em
+  font-weight: 100
+  letter-spacing: .2em
+  position: absolute
+  top: 30%
+  left: 50%
+  transform: translate3d(-50%,-50%,0)
+
+#profesion
+  color: white
+  border: 1px solid white
+  display: table
+  position: absolute
+  top: 50%
+  left: 50%
+  letter-spacing: .05em
+  transform: translate3d(-50%,-50%,0)
+  text-decoration: none
+  transition: all 200ms ease
+  padding: 10px 15px
+  &:hover
+    background: white
+    color: black
+
+.some-space
+  animation: rotate 18s .5s infinite linear reverse
+
+.some-more-space
+  animation: rotate 15s .1s infinite linear
+
+.roll-in-left
+  animation: roll-in-left 0.8s ease-out both
+
+@keyframes roll-in-left
+  0%
+    transform: translateX(-800px) rotate(-540deg)
+    opacity: 0
+  100% 
+    transform: translateX(0) rotate(0deg)
+    opacity: 1
+
+.tracking-in-expand
+  animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+
+@keyframes tracking-in-expand 
+  0% 
+    letter-spacing: -0.5em
+    opacity: 0
+  40% 
+    opacity: 0.6
+  100% 
+    opacity: 1
+
+.slide-in-left
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@keyframes slide-in-left 
+  0% 
+    transform: translateX(-1000px)
+    opacity: 0  
+  100%
+    transform: translateX(0)
+    opacity: 1
+
+.slide-left
+  animation: slide-left 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@keyframes slide-left 
+  0% 
+    opacity: 0
+  100% 
+    opacity: 1
+
+.slide-in-right
+  animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@keyframes slide-in-right
+  0% 
+    transform: translateX(1000px)
+    opacity: 0
+  100% 
+    transform: translateX(0)
+    opacity: 1
+
+.slide-in-elliptic-top-fwd
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@keyframes slide-in-elliptic-top-fwd 
+  0% 
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0)
+            transform: translateY(-600px) rotateX(-30deg) scale(0)
+    -webkit-transform-origin: 50% 100%
+            transform-origin: 50% 100%
+    opacity: 0
+  100% 
+    -webkit-transform: translateY(0) rotateX(0) scale(1)
+            transform: translateY(0) rotateX(0) scale(1)
+    -webkit-transform-origin: 50% 1400px
+            transform-origin: 50% 1400px
+    opacity: 1
+
+@keyframes rotate
+  0%
+    transform: rotateZ(0deg) translate3d(0,1.5%,0) rotateZ(0deg)
+  100%
+    transform: rotateZ(360deg) translate3d(0,1.5%,0) rotateZ(-360deg)
+
